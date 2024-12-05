@@ -1,6 +1,22 @@
 # Lynis Changelog
 
-## Lynis 3.1.2 (not released yet)
+## Lynis 3.1.3 (not released yet)
+
+### Added
+- Detection of Buildroot, Fedora Linux Asahi Remix, Garden Linux, Peppermint OS
+- Support for blog posts and articles to enhance suggestions
+
+### Changed
+- BOOT-5264 - Changed output of systemd-analyze test and added link
+- FILE-6398 - Test temporarily disabled as on modern kernels JDB support is built-in
+- FIRE-4508 - Several changes to expand the test, make it more generic, resolve minor issues
+- KRNL-5622 - Test if systemctl binary is set
+- Several improvements for busybox
+- Update of translations: Italian, Russian, Spanish
+
+---------------------------------------------------------------------------------
+
+## Lynis 3.1.2 (2024-09-26)
 
 ### Added
 - Detection of ALT Linux
@@ -19,8 +35,7 @@
 ### Changed
 - Correction of software EOL database and inclusion of AIX entries
 - Support sysctl value perf_event_paranoid -> 2|3
-- Update of Turkish translation
-- Update of Portuguese translation
+- Update of translations: German, Portuguese, Turkish
 - Grammar and spell improvements
 - Improved package detection on Alpine Linux
 - Slackware support to check installed packges (functionPackageIsInstalled())
@@ -32,6 +47,7 @@
 - CONT-8104 - Checking for errors, not only warning in docker info output
 - DBS-1826 - PostgreSQL detection improved for AlmaLinux, Rocky Linux, and FreeBSD
 - FILE-6344 - Test kernel version (major/minor)
+- INSE-8000 - Added inetd package and service name used in ubuntu 24.04
 - KRNL-5622 - Use systemctl get-default instead of following link
 - KRNL-5820 - Accept ulimit with -H parameter also
 - LOGG-2144 - Check for wazuh-agent presence on Linux systems
@@ -43,6 +59,7 @@
 - PKGS-7303 - Added version numbers to brew packages
 - PKGS-7370 - Cron job check for debsums improved
 - PKGS-7392 - Improved filtering of apt-check output (Ubuntu 24.04 may give an error)
+- PKGS-7410 - Added kernel name for Hardkernel odroid XU4
 
 ---------------------------------------------------------------------------------
 
